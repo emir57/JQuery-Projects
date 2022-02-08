@@ -8,11 +8,20 @@
 html {
     font-size: 10px;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #2E4053;
     text-align: center;
     line-height: 1.7;
     color: #F0F3F4;
     font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    
 }
