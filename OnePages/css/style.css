@@ -23,14 +23,14 @@ a {
 }
 
 p {
-    
+    padding: 3rem;
 }
 header{
     height: 44rem;
     position: relative;
 }
 header .image-header{
-    height: 44rem;
+    height: 80rem;
     width: 100%;
     background-image: url(../image/photo-1542831371-29b0f74f9713.jpg);
     opacity: .4;
@@ -40,7 +40,7 @@ header .image-header{
     background-position: center;
 }
 header h1{
-    padding: 12rem 12rem 2rem 12rem;
+    padding: 24rem 12rem 2rem 12rem;
     text-transform: uppercase;
 }
 .btn-header{
