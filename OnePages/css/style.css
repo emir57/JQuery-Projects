@@ -39,3 +39,7 @@ header .image-header{
     background-size: cover;
     background-position: center;
 }
+header h1{
+    padding: 12rem;
+    text-transform: uppercase;
+}
