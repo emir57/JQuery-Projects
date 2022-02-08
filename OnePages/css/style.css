@@ -27,11 +27,15 @@ p {
 }
 header{
     height: 44rem;
-    background: black;
     position: relative;
 }
 header .image-header{
     height: 44rem;
     width: 100%;
     background-image: url(../image/photo-1542831371-29b0f74f9713.jpg);
+    opacity: .4;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
 }
