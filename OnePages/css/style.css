@@ -22,19 +22,25 @@ a {
     text-decoration: none;
 }
 
-img{
+img {
     height: auto;
     width: 100%;
+}
+
+main #division-2-list ul {
+    list-style: none;
 }
 
 p {
     padding: 3rem;
 }
-header{
+
+header {
     height: 44rem;
     position: relative;
 }
-header .image-header{
+
+header .image-header {
     height: 80rem;
     width: 100%;
     background-image: url(../image/photo-1542831371-29b0f74f9713.jpg);
@@ -44,11 +50,13 @@ header .image-header{
     background-size: cover;
     background-position: center;
 }
-header h1{
+
+header h1 {
     padding: 24rem 12rem 2rem 12rem;
     text-transform: uppercase;
 }
-.btn-header{
+
+.btn-header {
     color: #fff;
     font-size: 1rem;
     line-height: 1.5;
@@ -62,8 +70,9 @@ header h1{
     border: 1px solid rgb(255, 212, 59);
     white-space: nowrap;
 }
-.btn-header:hover{
-    background-color: rgb(255,212,59);
+
+.btn-header:hover {
+    background-color: rgb(255, 212, 59);
     color: black;
 }
 
