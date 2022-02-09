@@ -120,11 +120,15 @@ header h1 {
 #left-main {
     float: left;
     width: 50%;
+    height: 100%;
     box-sizing: border-box;
+    background-color: tomato;
 }
 
 #right-main {
     float: left;
     width: 50%;
+    height: 100%;
     box-sizing: border-box;
+    background-color: yellow;
 }
