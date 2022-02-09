@@ -101,4 +101,9 @@ header h1 {
     border-radius: 1rem;
     opacity: .9;
 }
+.area .area-div h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
 
