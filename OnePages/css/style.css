@@ -38,6 +38,7 @@ p {
 header {
     height: 44rem;
     position: relative;
+    margin-bottom: 4rem;
 }
 
 header .image-header {
@@ -77,4 +78,9 @@ header h1 {
 }
 
 /* section-1 ****************************/
+#division-1-main{
+    background-color: black;
+    color: white;
+    padding: 4.4rem 0;
+}
 /* section-2 list ****************************/
