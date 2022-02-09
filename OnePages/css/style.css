@@ -116,9 +116,15 @@ header h1 {
     width: 100%;
     height: 30rem;
 }
-#left-main{
 
+#left-main {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
 }
-#right-main{
-    
+
+#right-main {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
 }
