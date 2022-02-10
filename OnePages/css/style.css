@@ -144,3 +144,18 @@ header h1 {
 #right-main ul {
     list-style-type: none;
 }
+.container{
+    width: 120rem;
+    margin: 0 auto;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+nav{
+    background-color: #007bff;
+    color: #FFF;
+    padding:3rem;
+}
+.emir-gurbuz{
+    color: #fff;
+    font-size: 3.4rem;
+}
