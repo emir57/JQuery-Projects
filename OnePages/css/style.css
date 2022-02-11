@@ -216,6 +216,12 @@ nav {
     float: left;
 }
 
+#logo-image {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
 /* Top */
 #bottom {
     position: fixed;
