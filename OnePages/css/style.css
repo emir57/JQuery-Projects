@@ -40,10 +40,12 @@ p {
     clear: both;
     display: block;
 }
-.uppercase{
+
+.uppercase {
     text-transform: uppercase;
 }
-.lowecase{
+
+.lowercase {
     text-transform: lowercase;
 }
 
@@ -213,27 +215,30 @@ nav {
 #logo {
     float: left;
 }
-#logo-image{
-    
+
+#logo-image {
+    background-image: url(../image/istockphoto-1308685498-170667a.jpg);
 }
 
 /* Top */
-#bottom{
+#bottom {
     position: fixed;
     opacity: .9;
     right: 0;
     bottom: 0;
     background-color: #34495E;
-    padding:0.3rem;
+    padding: 0.3rem;
     border-radius: 0.2rem;
-    margin:0.2rem;
+    margin: 0.2rem;
     transition: all 1s;
 }
-#bottom:hover{
+
+#bottom:hover {
     background-color: #566573;
     opacity: 1;
 }
-#bottom a{
+
+#bottom a {
     text-decoration: none;
     color: #fff;
 }
