@@ -176,6 +176,7 @@ nav {
 .emir-gurbuz {
     color: #fff;
     font-size: 3.4rem;
+
 }
 
 #menu {
@@ -213,14 +214,17 @@ nav {
 }
 
 #logo {
+    position: relative;
     float: left;
+    margin-top: -2rem;
 }
 
 #logo-image {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
+
 #logo-image:hover {
     opacity: .8;
     box-shadow: 1px 1px 1px 1px red;
