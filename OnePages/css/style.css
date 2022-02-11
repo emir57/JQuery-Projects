@@ -152,9 +152,11 @@ header h1 {
     margin: 0 0;
     padding-left: .6rem;
     padding-right: .6rem;
+    padding-bottom: 4rem;
 }
 
 nav {
+    position: fixed;
     background-color: #007bff;
     color: #FFF;
     padding: 3rem;
