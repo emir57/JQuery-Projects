@@ -222,6 +222,7 @@ nav {
 }
 #bottom:hover{
     background-color: #566573;
+    opacity: 1;
 }
 #bottom a{
     text-decoration: none;
