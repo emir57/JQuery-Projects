@@ -152,7 +152,7 @@ header h1 {
     margin: 0 0;
     padding-left: .6rem;
     padding-right: .6rem;
-    
+
 }
 
 nav {
@@ -181,14 +181,21 @@ nav {
     letter-spacing: 0.2rem;
     transition: all 3s;
 }
-#menu i{
-    margin-right: 0.5rem;
-}
 
 #menu a:hover {
     color: #007bff;
     background-color: #fff;
-    
+
+}
+
+#menu i {
+    margin-right: 0.5rem;
+    transition: all 3s;
+}
+
+#menu i:hover {
+    color: #007bff;
+    background-color: #fff;
 }
 
 #menu li {
