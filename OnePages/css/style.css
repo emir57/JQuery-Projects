@@ -207,3 +207,9 @@ nav {
 #logo {
     float: left;
 }
+
+/* Top */
+#top a{
+    text-decoration: none;
+    color: #fff;
+}
