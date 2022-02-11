@@ -40,6 +40,9 @@ p {
     clear: both;
     display: block;
 }
+.uppercase{
+    text-transform: uppercase;
+}
 
 /* *******Header******* */
 header {
