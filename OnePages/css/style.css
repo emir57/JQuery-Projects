@@ -221,6 +221,10 @@ nav {
     height: 7rem;
     border-radius: 50%;
 }
+#logo-image:hover {
+    opacity: .8;
+    box-shadow: 1px 1px 1px 1px red;
+}
 
 /* Top */
 #bottom {
