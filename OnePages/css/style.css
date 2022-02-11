@@ -216,10 +216,6 @@ nav {
     float: left;
 }
 
-#logo-image {
-    background-image: url(../image/istockphoto-1308685498-170667a.jpg);
-}
-
 /* Top */
 #bottom {
     position: fixed;
