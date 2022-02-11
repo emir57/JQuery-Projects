@@ -43,6 +43,9 @@ p {
 .uppercase{
     text-transform: uppercase;
 }
+.lowecase{
+    text-transform: lowercase;
+}
 
 /* *******Header******* */
 header {
