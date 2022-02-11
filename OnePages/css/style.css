@@ -211,6 +211,7 @@ nav {
 /* Top */
 #bottom{
     position: fixed;
+    opacity: .9;
     right: 0;
     bottom: 0;
     background-color: #34495E;
