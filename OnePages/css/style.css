@@ -144,38 +144,51 @@ header h1 {
 #right-main ul {
     list-style-type: none;
 }
+
 /* Nav ****************************/
 
-.container{
+.container {
     width: 120rem;
     margin: 0 0;
     padding-left: .6rem;
     padding-right: .6rem;
 }
-nav{
+
+nav {
     background-color: #007bff;
     color: #FFF;
-    padding:3rem;
+    padding: 3rem;
 }
-.emir-gurbuz{
+
+.emir-gurbuz {
     color: #fff;
     font-size: 3.4rem;
 }
-#menu{
+
+#menu {
     float: right;
 }
-#menu a{
+
+#menu a {
     color: #fff;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     transition: all 3s;
 }
-#menu li{
-    display: inline-block;
-    margin: 0 12rem 12rem 0;
+
+#menu a:hover {
+    color: #007bff;
+    background-color: #fff;
     
 }
-#logo{
+
+#menu li {
+    display: inline-block;
+    margin: 0 12rem 12rem 0;
+
+}
+
+#logo {
     float: left;
 }
