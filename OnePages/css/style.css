@@ -272,6 +272,10 @@ nav {
     box-sizing: border-box;
     border-radius: .5rem;
 }
+.form-control:focus {
+    border-color:#007bff;
+    background-color: cornflowerblue;
+}
 
 .form-group {
     margin-bottom: .5rem;
