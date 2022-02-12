@@ -253,12 +253,22 @@ nav {
     text-decoration: none;
     color: #fff;
 }
+
+/* contact ****************************/
+.form-group {
+    width: 10rem;
+    padding: 10rem;
+    border: 1px solid aqua;
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+
 /* Footer ****************************/
 
-footer{
+footer {
     padding: 6rem 6rem 12rem 6rem;
 }
-footer a{
+
+footer a {
     color: #ff4500;
 }
-
