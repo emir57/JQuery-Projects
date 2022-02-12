@@ -263,12 +263,15 @@ nav {
     width: 100%;
     height: auto;
 }
-.form-group {
+.form-control {
     width: 100%;
     padding: 2rem;
     border: 1px solid aqua;
     box-sizing: border-box;
     border-radius: .5rem;
+}
+.form-group{
+    
 }
 
 /* Footer ****************************/
