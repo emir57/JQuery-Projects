@@ -255,6 +255,10 @@ nav {
 }
 
 /* contact ****************************/
+#form-email{
+    width: 100%;
+    height: 25rem;
+}
 .form-group {
     width: 10rem;
     padding: 10rem;
