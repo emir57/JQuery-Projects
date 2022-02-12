@@ -273,7 +273,9 @@ nav {
     border-radius: .5rem;
 }
 
-.form-group {}
+.form-group {
+    margin-bottom: .5rem;
+}
 
 /* Footer ****************************/
 
