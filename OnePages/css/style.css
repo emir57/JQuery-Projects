@@ -223,6 +223,7 @@ nav {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    transition: all 0.5s;
 }
 
 #logo-image:hover {
