@@ -280,6 +280,13 @@ nav {
 .form-group {
     margin-bottom: .5rem;
 }
+.btn{
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: .7rem;
+    
+}
 
 /* Footer ****************************/
 
