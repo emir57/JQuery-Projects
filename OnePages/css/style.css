@@ -253,3 +253,12 @@ nav {
     text-decoration: none;
     color: #fff;
 }
+/* Footer ****************************/
+
+footer{
+    padding: 6rem 6rem 12rem 6rem;
+}
+footer a{
+    color: #ff4500;
+}
+
