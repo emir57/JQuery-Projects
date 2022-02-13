@@ -68,6 +68,11 @@ p {
     width: 75%;
     box-sizing: border-box;
 }
+.col-100{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /* *******Header******* */
 header {
