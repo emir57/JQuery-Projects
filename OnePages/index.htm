@@ -115,9 +115,31 @@
         <!-- Section 3 End -->
         <section id="form-email">
             <h1>İletişim</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptates labore accusamus adipisci suscipit iste sapiente reprehenderit doloremque sit commodi.</p>
-            <div class="col-50 clearfix">
-
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptates labore accusamus
+                adipisci suscipit iste sapiente reprehenderit doloremque sit commodi.</p>
+            <div class="col-50 clearfix" style="margin-bottom:5rem;">
+                <form action="" method="post">
+                    <div class="form-group-all">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="fullName" id="fullName"
+                                placeholder="Adınızı ve Soyadınızı Giriniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email" id="email"
+                                placeholder="Adınızı ve Soyadınızı Giriniz" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" placeholder="Mesajınız"
+                                required></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" name="" id="exampleCheck1" class="form-check-input"><br>
+                            <label for="exampleCheck1" class="form-check-label">Check me out</label>
+                        </div>
+                        <input class="btn" type="reset" value="Temizle">
+                        <input class="btn" type="button" value="Gönder">
+                    </div>
+                </form>
             </div>
             <div class="col-50 clearfix">
                 <form action="" method="post">
