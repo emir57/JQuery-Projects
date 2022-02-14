@@ -33,6 +33,7 @@ main #division-2-list ul {
 
 p {
     padding: 3rem;
+    color: white !important;
 }
 
 .clearfix::after {
