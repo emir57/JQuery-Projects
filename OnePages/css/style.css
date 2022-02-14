@@ -322,7 +322,14 @@ nav {
     margin: 1rem;
     width: 22%;
 }
-
+/* division-contact ****************************/
+#division-contact{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    width: 100%;
+    min-height: 20rem;
+}
 /* Footer ****************************/
 
 footer {
