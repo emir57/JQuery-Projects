@@ -8,8 +8,10 @@ $(function () {
     $("#resizable").resizable();
 })
 $(function () {
-    $("#dialog").hide();
+    $("#dialog").dialog({
+        autoOpen:false
+    });
     $("#dialogButton").click(function(){
-        $("#dialog").dialog();
+        $("#dialog").dialog("open");
     });
 })
