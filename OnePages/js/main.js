@@ -7,3 +7,8 @@ $(function () {
 $(function () {
     $("#resizable").resizable();
 })
+$(function () {
+    $("#dialogButton").click(function(){
+        $("#dialog").dialog();
+    });
+})
