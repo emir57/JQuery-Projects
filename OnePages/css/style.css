@@ -364,6 +364,9 @@ footer a {
         margin: 1%;
         display: inline-block;
     }
+    html{
+        font-size: 10px;
+    }
 }
 @media screen and (min-width:1200px){
     #division-2-list li{
