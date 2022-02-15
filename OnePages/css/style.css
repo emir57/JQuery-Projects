@@ -356,7 +356,11 @@ footer a {
     }
 }
 @media screen and (min-width:900px){
-
+    #division-2-list li{
+        width: 30%;
+        margin: 1%;
+        display: inline-block;
+    }
 }
 @media screen and (min-width:1200px){
 
