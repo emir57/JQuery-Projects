@@ -159,6 +159,10 @@ header h1 {
     background-color: #fff;
     color: #234;
 }
+#division-2-list p {
+    background-color: #fff;
+    color: #234 !important;
+}
 
 .area img {
     border-radius: 1rem;
