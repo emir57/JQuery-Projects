@@ -348,11 +348,12 @@ footer a {
 769 1279
 +1280
 */
-@media screen and (min-width:481px){
-
-}
 @media screen and (min-width:769px){
-
+    #division-2-list li{
+        width: 47%;
+        margin: 1%;
+        display: inline-block;
+    }
 }
 @media screen and (min-width:900px){
 
