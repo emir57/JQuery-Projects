@@ -207,6 +207,7 @@ nav {
 
 #menu {
     float: right;
+    display: none;
 }
 
 #menu a {
