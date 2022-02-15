@@ -9,9 +9,27 @@ $(function () {
 })
 $(function () {
     $("#dialog").dialog({
-        autoOpen:false
+        autoOpen: false
     });
-    $("#dialogButton").click(function(){
+    $("#dialogButton").click(function () {
         $("#dialog").dialog("open");
+    });
+})
+$(function () {
+    var autoComplete = [
+        "Angular",
+        "Ajax",
+        "Css3",
+        "C#",
+        "Electron",
+        "Html5",
+        "Ionic",
+        "Javascript",
+        "JQuery",
+        "Java",
+        "React",
+    ]
+    $("#tags").autocomplete({
+        source: autoComplete
     });
 })
