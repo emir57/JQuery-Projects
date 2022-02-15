@@ -348,5 +348,17 @@ footer a {
 769 1279
 +1280
 */
+@media screen and (min-width:481px){
+
+}
+@media screen and (min-width:769px){
+
+}
+@media screen and (min-width:900px){
+
+}
+@media screen and (min-width:1200px){
+
+}
 
 
