@@ -357,6 +357,12 @@ footer a {
     html{
         font-size: 9px;
     }
+    #menu{
+        display: none;
+    }
+    #bar-icon{
+        display: block;
+    }
 }
 @media screen and (min-width:900px){
     #division-2-list li{
@@ -367,6 +373,12 @@ footer a {
     html{
         font-size: 10px;
     }
+    #menu{
+        display: inline-block;
+    }
+    #bar-icon{
+        display: none;
+    }
 }
 @media screen and (min-width:1200px){
     #division-2-list li{
@@ -376,6 +388,12 @@ footer a {
     }
     html{
         font-size: 12px;
+    }
+    #menu{
+        display: inline-block;
+    }
+    #bar-icon{
+        display: none;
     }
 }
 
