@@ -4,3 +4,6 @@ $(document).ready(function () {
 $(function () {
     $("#tabs").tabs();
 })
+$(function () {
+    $("#resizable").resizable();
+})
