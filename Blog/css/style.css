@@ -35,6 +35,12 @@ header .jumbotron {
     padding-top: 12rem;
     height: 30rem;
 }
-#header-title{
+
+#header-title {
     text-transform: uppercase;
+}
+
+/* Breadcrumb */
+nav ol.breadcrumb{
+    margin-top: -1.66%;
 }
