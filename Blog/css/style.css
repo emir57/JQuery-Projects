@@ -18,6 +18,15 @@ body {
 
 /* Nav */
 
-nav{
+nav {
     opacity: .9;
+}
+
+/* Header */
+
+header .jumbotron{
+    background-image: url("../image/photo-1542831371-29b0f74f9713.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
