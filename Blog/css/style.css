@@ -33,5 +33,8 @@ header .jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 12rem;
-    height: 40rem;
+    height: 30rem;
+}
+header #header-title{
+    text-transform: uppercase;
 }
