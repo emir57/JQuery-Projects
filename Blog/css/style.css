@@ -15,3 +15,9 @@ Project version:1.0V
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Nav */
+
+nav{
+    opacity: .9;
+}
