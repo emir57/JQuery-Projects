@@ -15,7 +15,8 @@ Project version:1.0V
 body {
     font-family: 'Roboto', sans-serif;
 }
-html{
+
+html {
     font-size: 15px;
 }
 
@@ -27,9 +28,10 @@ nav {
 
 /* Header */
 
-header .jumbotron{
+header .jumbotron {
     background-image: url("../image/photo-1542831371-29b0f74f9713.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 12rem;
+    height: 40rem;
 }
