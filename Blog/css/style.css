@@ -41,6 +41,9 @@ header .jumbotron {
 }
 
 /* Breadcrumb */
-nav ol.breadcrumb{
+nav ol.breadcrumb {
     margin-top: -1.66%;
+    background-color: rgb(29, 29, 29);
 }
+
+#breadcrumb-emir {}
