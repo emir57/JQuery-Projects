@@ -28,4 +28,7 @@ $(function(){
         "PHP",
         "Python",
     ]
+    $("#text").autocomplete({
+        source:autoComplete
+    });
 })
