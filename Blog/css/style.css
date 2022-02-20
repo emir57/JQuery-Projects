@@ -14,7 +14,7 @@ Project version:1.0V
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url("../image/istockphoto-537331500-170667a.jpg");
+    background-color: #2E4053 !important;
 }
 
 html {
