@@ -5,7 +5,6 @@ Project year:2022
 Project version:1.0V
 */
 /* Config File */
-
 * {
     box-sizing: border-box !important;
     padding: 0;
@@ -20,6 +19,7 @@ body {
 
 html {
     font-size: 15px;
+    scroll-behavior: smooth !important;
 }
 
 /* Nav */
