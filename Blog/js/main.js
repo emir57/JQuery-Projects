@@ -7,3 +7,25 @@
 //         });
 //     });
 // });
+$(function(){
+    var autoComplete=[
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "Ajax",
+        "BASIC",
+        "Bootstrap",
+        "C",
+        "C++",
+        "Clojure",
+        "Cobol",
+        "ColdFusion",
+        "Css3",
+        "Html5",
+        "Java",
+        "JavaScript",
+        "Jquery",
+        "PHP",
+        "Python",
+    ]
+})
