@@ -52,3 +52,9 @@ nav ol.breadcrumb {
 .col-md-8 img:hover{
     opacity: .9;
 }
+
+/* Footer */
+footer{
+    min-height: 20rem;
+    width: auto;
+}
