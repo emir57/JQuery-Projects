@@ -7,7 +7,7 @@
 //         });
 //     });
 // });
-$(function(){
+$(document).ready(function(){
     var autoComplete=[
         "ActionScript",
         "AppleScript",
@@ -26,9 +26,9 @@ $(function(){
         "JavaScript",
         "Jquery",
         "PHP",
-        "Python",
+        "Python"
     ]
-    $("#text").autocomplete({
+    $("#tags").autocomplete({
         source:autoComplete
     });
 })
