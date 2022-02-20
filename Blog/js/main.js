@@ -32,3 +32,9 @@ $(document).ready(function(){
         source:autoComplete
     });
 })
+$(document).ready(function(){
+    var btn_login = $("#btn_login");
+    btn_login.click(function(){
+        $("#myUye").modal();
+    })
+})
