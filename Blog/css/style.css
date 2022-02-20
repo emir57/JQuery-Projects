@@ -22,6 +22,12 @@ html {
     scroll-behavior: smooth !important;
 }
 
+#btn_login{
+    background: transparent;
+    border: none;
+    color: white;
+}
+
 /* Nav */
 
 nav {
@@ -59,3 +65,4 @@ footer{
     min-height: 20rem;
     width: auto;
 }
+
