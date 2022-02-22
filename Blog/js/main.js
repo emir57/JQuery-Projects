@@ -49,6 +49,7 @@ $(document).ready(function(){
     email_msg = $("#email_message");
     password_msg = $("#password_message");
     $("#form_login").submit(function(){
+        var isSuccess = true;
         phone_msg.empty();
         email_msg.empty();
         password_msg.empty();
@@ -58,30 +59,33 @@ $(document).ready(function(){
         password = $("#password").val();
         if(email.trim()==""){
             email_msg.html(email_msg.html()+"Email boş olamaz<br>");
-            return false;
+            isSuccess = false;
         }
         if(phone.trim() == ""){
             phone_msg.html(password_msg.html()+"Telefon numarası boş olamaz<br>");
-            return false;
+            isSuccess = false;
         }
         if(password.trim()==""){
             password_msg.html(password_msg.html()+"Şifre boş olamaz<br>");
-            return false;
+            isSuccess = false;
         }
-
         //Validation
-        if(!$.isNumeric(phone)){
-            phone_msg.html(phone_msg.html()+"Telefon numarası sadece sayı içermelidir <br>");
-            return false;
+        if(!validatePhone(phone)){
+            phone_msg.html(phone_msg.html()+"Telefon numarası geçersiz <br>");
+            isSuccess = false;
         }
         if(!validateEmail(email)){
             email_msg.html(email_msg.html()+"Email geçersiz<br>");
-            return false;
+            isSuccess = false;
         }
-        return true;
+        return isSuccess == true ? true:false;
     })
     function validateEmail(email){
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(String(email))
+    }
+    function validatePhone(phone){
+        var regex = /([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
+        return regex.test(phone);
     }
 })
