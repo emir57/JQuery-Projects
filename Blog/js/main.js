@@ -59,13 +59,16 @@ $(document).ready(function(){
         phone = $("#phone").val();
         password = $("#password").val();
         if(email.trim()==""){
-            email_msg.html("Email boş olamaz");
+            email_msg.html(email_msg.html()+"Email boş olamaz<br>");
         }
         if(phone.trim() == ""){
-            phone_msg.html("Telefon numarası boş olamaz");
+            phone_msg.html(password_msg.html()+"Telefon numarası boş olamaz<br>");
+        }
+        if(!$.isNumeric(phone)){
+            phone_msg.html(phone_msg.html()+"Telefon numarası harf içeremez <br>");
         }
         if(password.trim()==""){
-            password_msg.html("Şifre boş olamaz");
+            password_msg.html(password_msg.html()+"Şifre boş olamaz<br>");
         }
     })
 })
