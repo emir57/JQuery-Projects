@@ -72,5 +72,12 @@ $(document).ready(function(){
         if(!$.isNumeric(phone)){
             phone_msg.html(phone_msg.html()+"Telefon numarası harf içeremez <br>");
         }
+        if(!validateEmail(email)){
+            email_msg.html(email_msg.html()+"Email geçersiz<br>");
+        }
     })
+    function validateEmail(email){
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(String(email))
+    }
 })
