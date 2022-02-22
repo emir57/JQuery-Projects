@@ -43,6 +43,9 @@ $(document).ready(function(){
 //#phone
 //#password
 $(document).ready(function(){
+    $("#form_login").submit(function(){
+        return false;
+    })
     var phone_msg,email_msg,password_msg;
     phone_msg = $("#phone_message");
     email_msg = $("#email_message");
