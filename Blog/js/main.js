@@ -43,13 +43,20 @@ $(document).ready(function(){
 //#phone
 //#password
 $(document).ready(function(){
+    var phone_msg,email_msg,password_msg;
+    phone_msg = $("#phone_message");
+    email_msg = $("#email_message");
+    password_msg = $("#password_message");
     $("#btn_submit").click(function(){
+        phone_msg.empty();
+        email_msg.empty();
+        password_msg.empty();
         var email,phone,password;
         email = $("#email").val();
         phone = $("#phone").val();
         password = $("#password").val();
         if(email==""){
-            
+            email_msg.html("Email boş olamaz")
         }
     })
 })
