@@ -64,11 +64,13 @@ $(document).ready(function(){
         if(phone.trim() == ""){
             phone_msg.html(password_msg.html()+"Telefon numarası boş olamaz<br>");
         }
-        if(!$.isNumeric(phone)){
-            phone_msg.html(phone_msg.html()+"Telefon numarası harf içeremez <br>");
-        }
         if(password.trim()==""){
             password_msg.html(password_msg.html()+"Şifre boş olamaz<br>");
+        }
+
+        //Validation
+        if(!$.isNumeric(phone)){
+            phone_msg.html(phone_msg.html()+"Telefon numarası harf içeremez <br>");
         }
     })
 })
