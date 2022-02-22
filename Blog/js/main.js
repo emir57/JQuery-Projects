@@ -89,3 +89,6 @@ $(document).ready(function(){
         return regex.test(phone);
     }
 })
+$(document).ready(function(){
+    $("#picture_1").tooltip();
+})
