@@ -48,5 +48,8 @@ $(document).ready(function(){
         email = $("#email").val();
         phone = $("#phone").val();
         password = $("#password").val();
+        if(email==""){
+            
+        }
     })
 })
