@@ -43,5 +43,10 @@ $(document).ready(function(){
 //#phone
 //#password
 $(document).ready(function(){
-    
+    $("#btn_submit").click(function(){
+        var email,phone,password;
+        email = $("#email").val();
+        phone = $("#phone").val();
+        password = $("#password").val();
+    })
 })
