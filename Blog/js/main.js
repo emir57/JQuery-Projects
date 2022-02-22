@@ -56,7 +56,13 @@ $(document).ready(function(){
         phone = $("#phone").val();
         password = $("#password").val();
         if(email==""){
-            email_msg.html("Email boş olamaz")
+            email_msg.html("Email boş olamaz");
+        }
+        if(phone == ""){
+            phone_msg.html("Telefon numarası boş olamaz");
+        }
+        if(password==""){
+            password_msg.html("Şifre boş olamaz");
         }
     })
 })
