@@ -38,3 +38,10 @@ $(document).ready(function(){
         $("#myUye").modal();
     })
 })
+// Form validation
+//#email
+//#phone
+//#password
+$(document).ready(function(){
+
+})
