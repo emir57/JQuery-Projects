@@ -58,16 +58,13 @@ $(document).ready(function(){
         email = $("#email").val();
         phone = $("#phone").val();
         password = $("#password").val();
-        email = email.trim();
-        phone = phone.trim();
-        password = password.trim();
-        if(email==""){
+        if(email.trim()==""){
             email_msg.html("Email boş olamaz");
         }
-        if(phone == ""){
+        if(phone.trim() == ""){
             phone_msg.html("Telefon numarası boş olamaz");
         }
-        if(password==""){
+        if(password.trim()==""){
             password_msg.html("Şifre boş olamaz");
         }
     })
