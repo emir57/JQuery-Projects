@@ -58,6 +58,9 @@ $(document).ready(function(){
         email = $("#email").val();
         phone = $("#phone").val();
         password = $("#password").val();
+        email = email.trim();
+        phone = phone.trim();
+        password = password.trim();
         if(email==""){
             email_msg.html("Email boş olamaz");
         }
