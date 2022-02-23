@@ -7,6 +7,15 @@
 //         });
 //     });
 // });
+// $(document).ready(function(){
+//     fetch("https://jsonplaceholder.typicode.com/posts",{
+//         method:"POST",
+//         body:{email:"eve.holt@reqres.in",password:"pistol"}
+//     }).then((response)=>{
+//         response.json().then(data=>{console.log(data)})
+//     })
+
+// })
 $(document).ready(function(){
     var autoComplete=[
         "ActionScript",
@@ -43,7 +52,6 @@ $(document).ready(function(){
 //#phone
 //#password
 $(document).ready(function(){
-    
     var phone_msg,email_msg,password_msg;
     phone_msg = $("#phone_message");
     email_msg = $("#email_message");
