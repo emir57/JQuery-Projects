@@ -7,6 +7,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/* Footer */
+footer #design-by{
+    transition: all .5s;
+}
+footer #design-by:hover{
+    color: #1adf34;
+    letter-spacing: 20px;
+}
 
 /* Icons */
 .icon {
