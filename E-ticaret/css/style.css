@@ -7,6 +7,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/* Address */
+address a{
+    text-decoration: none;
+}
 /* Footer */
 footer #design-by{
     transition: all .5s;
