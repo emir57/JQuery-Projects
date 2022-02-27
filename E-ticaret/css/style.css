@@ -36,3 +36,11 @@ body {
 .icon-github:hover {
     color: red;
 }
+
+/* Linkedin */
+.icon-linkedin {
+    color: #fff;
+}
+.icon-linkedin:hover {
+    color: red;
+}
