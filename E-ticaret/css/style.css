@@ -9,6 +9,9 @@ body {
 }
 
 /* Icons */
+.icon {
+    transition: all .5s;
+}
 
 /* Instagram */
 .icon-instagram {
@@ -16,7 +19,7 @@ body {
 }
 
 .icon-instagram:hover {
-    color: red;
+    color: #d48d1a;
 }
 
 /* Twitter */
@@ -41,6 +44,7 @@ body {
 .icon-linkedin {
     color: #fff;
 }
+
 .icon-linkedin:hover {
     color: red;
 }
