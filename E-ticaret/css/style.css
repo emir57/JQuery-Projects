@@ -9,6 +9,7 @@ body {
 }
 /* Address */
 address a{
+    font-size: small;
     text-decoration: none;
 }
 /* Footer */
