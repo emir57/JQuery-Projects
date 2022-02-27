@@ -10,10 +10,22 @@ body {
 /* Footer */
 footer #design-by{
     transition: all .5s;
+    
 }
 footer #design-by:hover{
-    color: #1adf34;
     letter-spacing: 20px;
+    animation: design-animate .4s both;
+}
+@keyframes design-animate {
+    0%{
+        color: #1adf34;
+    }
+    50%{
+        color: #1adf34;
+    }
+    100%{
+        color: #df1ab4;
+    }
 }
 
 /* Icons */
