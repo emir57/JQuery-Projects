@@ -6,3 +6,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Icons */
+.icon-instagram{
+    color: #fff;
+}
+.icon-instagram:hover{
+    color: red;
+}
