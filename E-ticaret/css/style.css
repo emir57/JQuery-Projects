@@ -1,22 +1,38 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box !important;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Icons */
-.icon-instagram{
+
+/* Instagram */
+.icon-instagram {
     color: #fff;
 }
-.icon-instagram:hover{
+
+.icon-instagram:hover {
     color: red;
 }
-.icon-twitter{
-    color:#fff;
+
+/* Twitter */
+.icon-twitter {
+    color: #fff;
 }
-.icon-twitter:hover{
-    color:red;
+
+.icon-twitter:hover {
+    color: red;
+}
+
+/* GitHUb */
+.icon-github {
+    color: #fff;
+}
+
+.icon-github:hover {
+    color: red;
 }
