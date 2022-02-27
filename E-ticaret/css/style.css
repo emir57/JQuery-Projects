@@ -20,6 +20,7 @@ body {
 
 .icon-instagram:hover {
     color: #d48d1a;
+    transform: translateY(-5%);
 }
 
 /* Twitter */
@@ -29,6 +30,7 @@ body {
 
 .icon-twitter:hover {
     color: #15bbde;
+    transform: translateY(-5%);
 }
 
 /* GitHUb */
@@ -38,6 +40,7 @@ body {
 
 .icon-github:hover {
     color: red;
+    transform: translateY(-5%);
 }
 
 /* Linkedin */
@@ -47,4 +50,5 @@ body {
 
 .icon-linkedin:hover {
     color: #00bee6;
+    transform: translateY(-5%);
 }
