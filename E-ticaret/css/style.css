@@ -80,3 +80,8 @@ footer #design-by:hover{
     color: #00bee6;
     transform: translateY(-5%);
 }
+
+/* Main */
+main{
+    margin-bottom:5%;
+}
