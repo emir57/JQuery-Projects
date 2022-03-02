@@ -7,6 +7,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+html{
+    font-size: 15px;
+}
 /* Address */
 address a{
     font-size: small;
