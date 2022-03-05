@@ -15,6 +15,12 @@ address a{
     font-size: small;
     text-decoration: none;
 }
+/* Nav */
+
+nav.navbar{
+    font-size: 13px;
+}
+
 /* Footer */
 footer #design-by{
     transition: all .5s;
