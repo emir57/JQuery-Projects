@@ -96,7 +96,7 @@ main{
 /* Modal */
 #login_ModalBg{
     z-index: 98;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background: black;
@@ -106,8 +106,11 @@ main{
 #login_Modal{
     z-index: 99;
     position: fixed;
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    left: 35%;
+    right: 35%;
+    top:5%;
+    height: auto;
     background: white;
     border: 1px solid rgb(82, 80, 80);
     display: none;
