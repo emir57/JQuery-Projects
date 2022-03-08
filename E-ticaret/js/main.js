@@ -1,11 +1,18 @@
 
 $(document).ready(function () {
     $("#btn_login").click(function () {
-        console.log("a")
         $("#login_Modal").fadeIn();
+        $("#login_Modal").animate({
+            top:"5%",
+            opacity:100
+        },200)
         $("#login_ModalBg").fadeIn();
     })
     $("#login_Modal .close").click(function(){
+        $("#login_Modal").animate({
+            top:"3%",
+            opacity:0
+        },200)
         $("#login_Modal").fadeOut();
         $("#login_ModalBg").fadeOut();
     })
