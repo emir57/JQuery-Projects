@@ -10,12 +10,15 @@ $(document).ready(function () {
         $("#login_ModalBg").fadeOut();
     })
     $("#login_ModalBg").click(function(){
+        $("#login_Modal .modal-dialog").addClass("redborder");
         $("#login_Modal").animate({
             left:"36%",
             top:"6%"
         },100).animate({
             left:"35%",
             top:"5%"
-        },100)
+        },100,function(){
+            $("#login_Modal .modal-dialog").removeClass("redborder");
+        })
     })
 })
