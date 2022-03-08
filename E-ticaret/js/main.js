@@ -20,10 +20,8 @@ $(document).ready(function () {
         $("#login_Modal .modal-dialog").addClass("redborder");
         $("#login_Modal").animate({
             left:"36%",
-            top:"6%"
         },100).animate({
             left:"35%",
-            top:"5%"
         },100,function(){
             $("#login_Modal .modal-dialog").removeClass("redborder");
         })
