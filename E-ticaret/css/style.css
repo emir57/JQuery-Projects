@@ -92,3 +92,23 @@ main{
     margin-bottom:5%;
     margin-top: 5%;
 }
+
+/* Modal */
+#login_ModalBg{
+    z-index: 98;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .7;
+    display: none;
+}
+#login_Modal{
+    z-index: 99;
+    position: fixed;
+    width: 15%;
+    height: 15%;
+    background: white;
+    border: 1px solid rgb(82, 80, 80);
+    display: none;
+}

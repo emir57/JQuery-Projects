@@ -1,6 +1,11 @@
 
 $(document).ready(function () {
     $("#btn_login").click(function () {
-        $("#login_Modal").modal();
+        console.log("a")
+        $("#login_Modal").show();
+        $("#login_ModalBg").show();
+    })
+    $("#login_Modal .close").click(function(){
+        
     })
 })
