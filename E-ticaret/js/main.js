@@ -1,25 +1,29 @@
 
 $(document).ready(function () {
-    $("#btn_login").click(function () {
-        $("#login_Modal").fadeIn();
-        $("#login_Modal").animate({
+    let btn_login = $("#btn_login");
+    let login_Modal = $("#login_Modal");
+    let register_Modal = $("#register_Modal");
+    let modalBg = $("#modalBg");
+    btn_login.click(function () {
+        login_Modal.fadeIn();
+        login_Modal.animate({
             top:"5%",
             opacity:100
         },200)
-        $("#modalBg").fadeIn();
+        modalBg.fadeIn();
     })
     $("#login_Modal .close").click(function(){
-        $("#login_Modal").animate({
+        login_Modal.animate({
             top:"3%",
             opacity:0
         },200)
-        $("#login_Modal").fadeOut();
-        $("#modalBg").fadeOut();
+        login_Modal.fadeOut();
+        modalBg.fadeOut();
     })
-    $("#modalBg").click(function(){
+    modalBg.click(function(){
         $("#login_Modal .modal-dialog").addClass("redborder");
-        let leftp = $("#login_Modal").css("left").split("px")[0];
-        $("#login_Modal").animate({
+        let leftp = login_Modal.css("left").split("px")[0];
+        login_Modal.animate({
             left:"36%",
         },100).animate({
             left:"35%",
