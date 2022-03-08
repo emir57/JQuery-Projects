@@ -101,7 +101,7 @@ main {
 }
 
 /* Modal */
-#login_ModalBg {
+#modalBg {
     z-index: 98;
     position: fixed;
     width: 100%;
@@ -112,6 +112,17 @@ main {
 }
 
 #login_Modal {
+    z-index: 99;
+    position: fixed;
+    width: 30%;
+    left: 35%;
+    right: 35%;
+    top: 3%;
+    opacity: 0;
+    background: transparent;
+    display: none;
+}
+#register_Modal {
     z-index: 99;
     position: fixed;
     width: 30%;

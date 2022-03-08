@@ -6,7 +6,7 @@ $(document).ready(function () {
             top:"5%",
             opacity:100
         },200)
-        $("#login_ModalBg").fadeIn();
+        $("#modalBg").fadeIn();
     })
     $("#login_Modal .close").click(function(){
         $("#login_Modal").animate({
@@ -14,9 +14,9 @@ $(document).ready(function () {
             opacity:0
         },200)
         $("#login_Modal").fadeOut();
-        $("#login_ModalBg").fadeOut();
+        $("#modalBg").fadeOut();
     })
-    $("#login_ModalBg").click(function(){
+    $("#modalBg").click(function(){
         $("#login_Modal .modal-dialog").addClass("redborder");
         let leftp = $("#login_Modal").css("left").split("px")[0];
         $("#login_Modal").animate({
