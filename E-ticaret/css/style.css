@@ -110,8 +110,6 @@ main{
     left: 35%;
     right: 35%;
     top:5%;
-    height: auto;
-    background: white;
-    border: 1px solid rgb(82, 80, 80);
+    background: transparent;
     display: none;
 }
