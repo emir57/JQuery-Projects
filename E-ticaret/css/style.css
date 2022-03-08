@@ -7,37 +7,44 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-html{
+
+html {
     font-size: 15px;
 }
+
 /* Address */
-address a{
+address a {
     font-size: small;
     text-decoration: none;
 }
+
 /* Nav */
 
-nav.navbar{
+nav.navbar {
     font-size: 13px;
 }
 
 /* Footer */
-footer #design-by{
+footer #design-by {
     transition: all .5s;
-    
+
 }
-footer #design-by:hover{
+
+footer #design-by:hover {
     letter-spacing: 20px;
     animation: design-animate .4s both;
 }
+
 @keyframes design-animate {
-    0%{
+    0% {
         color: #1adf34;
     }
-    50%{
+
+    50% {
         color: #1adf34;
     }
-    100%{
+
+    100% {
         color: #df1ab4;
     }
 }
@@ -88,13 +95,13 @@ footer #design-by:hover{
 }
 
 /* Main */
-main{
-    margin-bottom:5%;
+main {
+    margin-bottom: 5%;
     margin-top: 5%;
 }
 
 /* Modal */
-#login_ModalBg{
+#login_ModalBg {
     z-index: 98;
     position: fixed;
     width: 100%;
@@ -103,17 +110,19 @@ main{
     opacity: .7;
     display: none;
 }
-#login_Modal{
+
+#login_Modal {
     z-index: 99;
     position: fixed;
     width: 30%;
     left: 35%;
     right: 35%;
-    top:3%;
+    top: 3%;
     opacity: 0;
     background: transparent;
     display: none;
 }
-.redborder{
-    border:1px solid rgb(182, 16, 16);
+
+.redborder {
+    border: 1px solid rgb(182, 16, 16);
 }

@@ -18,6 +18,7 @@ $(document).ready(function () {
     })
     $("#login_ModalBg").click(function(){
         $("#login_Modal .modal-dialog").addClass("redborder");
+        let leftp = $("#login_Modal").css("left").split("px")[0];
         $("#login_Modal").animate({
             left:"36%",
         },100).animate({
