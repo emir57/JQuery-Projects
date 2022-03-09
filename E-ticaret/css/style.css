@@ -133,6 +133,17 @@ main {
     background: transparent;
     display: none;
 }
+#forgotPassword_Modal{
+    z-index: 99;
+    position: fixed;
+    width: 30%;
+    left: 35%;
+    right: 35%;
+    top: 3%;
+    opacity: 0;
+    background: transparent;
+    display: none;
+}
 
 .redborder {
     border: 1px solid rgb(182, 16, 16);
