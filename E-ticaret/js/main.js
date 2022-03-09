@@ -5,27 +5,12 @@ $(document).ready(function(){
 */
 
 $(document).ready(function () {
-    var btn_login = $("#btn_login");
-    var btn_register = $("#btn_register");
-    var login_Modal = $("#login_Modal");
-    var register_Modal = $("#register_Modal");
-    var modalBg = $("#modalBg");
-    btn_login.click(function () {
-        login_Modal.fadeIn();
-        login_Modal.animate({
-            top: "5%",
-            opacity: 100
-        }, 200)
-        modalBg.fadeIn();
-    })
-    btn_register.click(function () {
-        register_Modal.fadeIn();
-        register_Modal.animate({
-            top: "2%",
-            opacity: 100
-        }, 200)
-        modalBg.fadeIn();
-    })
+    var btn_login = $("#btn_login")
+    var btn_register = $("#btn_register")
+    var login_Modal = $("#login_Modal")
+    var register_Modal = $("#register_Modal")
+    var modalBg = $("#modalBg")
+    
     $("#login_Modal .close").click(function () {
         login_Modal.animate({
             top: "3%",
@@ -65,5 +50,20 @@ $(document).ready(function () {
     })
 })
 $(document).ready(function () {
-    
+    $("#btn_login").click(function () {
+        $("#login_Modal").fadeIn();
+        $("#login_Modal").animate({
+            top: "5%",
+            opacity: 100
+        }, 200)
+        $("#modalBg").fadeIn();
+    })
+    $("#btn_register").click(function () {
+        $("#register_Modal").fadeIn();
+        $("#register_Modal").animate({
+            top: "2%",
+            opacity: 100
+        }, 200)
+        $("#modalBg").fadeIn();
+    })
 })
