@@ -42,7 +42,7 @@ $(document).ready(function () {
     })
     $("#register_Modal .close").click(function () {
         $("#register_Modal").animate({
-            top: "0%",
+            top: "1%",
             opacity: 0
         }, 200)
         $("#register_Modal").fadeOut();
