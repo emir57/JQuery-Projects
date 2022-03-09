@@ -56,7 +56,8 @@
                                 <label for="">
                                     <input type="checkbox" /> Beni Hatırla
                                 </label>
-                                <a class="text-decoration-none d-block" id="forgotPassword" style="cursor: pointer;">Şifremi unuttum</a>
+                                <a class="text-decoration-none d-block" id="forgotPassword"
+                                    style="cursor: pointer;">Şifremi unuttum</a>
                             </div>
                             <button class="btn btn-info">Giriş Yap</button>
                         </form>
@@ -69,6 +70,36 @@
         </div>
     </div>
     <!-- Login Modal End -->
+
+    <!-- Forgot Password -->
+    <div class="" id="forgotPassword_Modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close me-0"
+                        style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>Şifremi Unuttum</h3>
+                        <form>
+                            <div class="form-group mb-1">
+                                <label for="email" class="form-label">Eposta</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Lütfen eposta adresinizi giriniz" required>
+                            </div>
+                            <button class="btn btn-info">Gönder</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary close">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forgot Password End -->
 
     <!-- Register Modal -->
     <div class="" id="register_Modal">
@@ -161,7 +192,8 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" id="btn_login" style="cursor: pointer;">Giriş</a></li>
-                                <li><a class="dropdown-item" id="btn_register" style="cursor: pointer;">Kayıt Ol</a></li>
+                                <li><a class="dropdown-item" id="btn_register" style="cursor: pointer;">Kayıt Ol</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
