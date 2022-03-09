@@ -7,8 +7,10 @@ $(document).ready(function(){
 $(document).ready(function () {
     var btn_login = $("#btn_login")
     var btn_register = $("#btn_register")
+    var forgotPasswordBtn = $("#forgotPasswordBtn")
     var login_Modal = $("#login_Modal")
     var register_Modal = $("#register_Modal")
+    var forgotPassword_Modal = $("#forgotPassword_Modal")
     var modalBg = $("#modalBg")
 })
 /* Modal Buttons */
