@@ -3,36 +3,13 @@ $(document).ready(function(){
 
 })
 */
-
+/* Variables */
 $(document).ready(function () {
     var btn_login = $("#btn_login")
     var btn_register = $("#btn_register")
     var login_Modal = $("#login_Modal")
     var register_Modal = $("#register_Modal")
     var modalBg = $("#modalBg")
-
-
-
-    modalBg.click(function () {
-        $("#login_Modal .modal-dialog").addClass("redborder");
-        let leftp = login_Modal.css("left").split("px")[0];
-
-        login_Modal.animate({
-            left: "36%",
-        }, 100).animate({
-            left: "35%",
-        }, 100, function () {
-            $("#login_Modal .modal-dialog").removeClass("redborder");
-        })
-
-        register_Modal.animate({
-            left: "36%",
-        }, 100).animate({
-            left: "35%",
-        }, 100, function () {
-            $("#login_Modal .modal-dialog").removeClass("redborder");
-        })
-    })
 })
 /* Modal Buttons */
 $(document).ready(function () {
@@ -70,5 +47,26 @@ $(document).ready(function () {
         }, 200)
         $("#register_Modal").fadeOut();
         $("#modalBg").fadeOut();
+    })
+})
+/* Modal Bg Click */
+$(document).ready(function () {
+    $("#modalBg").click(function () {
+        $("#login_Modal .modal-dialog").addClass("redborder");
+        $("#register_Modal .modal-dialog").addClass("redborder");
+        $("#login_Modal").animate({
+            left: "36%",
+        }, 100).animate({
+            left: "35%",
+        }, 100, function () {
+            $("#login_Modal .modal-dialog").removeClass("redborder");
+        })
+        $("#register_Modal").animate({
+            left: "36%",
+        }, 100).animate({
+            left: "35%",
+        }, 100, function () {
+            $("#register_Modal .modal-dialog").removeClass("redborder");
+        })
     })
 })
