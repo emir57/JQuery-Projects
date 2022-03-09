@@ -10,23 +10,8 @@ $(document).ready(function () {
     var login_Modal = $("#login_Modal")
     var register_Modal = $("#register_Modal")
     var modalBg = $("#modalBg")
-    
-    $("#login_Modal .close").click(function () {
-        login_Modal.animate({
-            top: "3%",
-            opacity: 0
-        }, 200)
-        login_Modal.fadeOut();
-        modalBg.fadeOut();
-    })
-    $("#register_Modal .close").click(function () {
-        register_Modal.animate({
-            top: "0%",
-            opacity: 0
-        }, 200)
-        register_Modal.fadeOut();
-        modalBg.fadeOut();
-    })
+
+
 
     modalBg.click(function () {
         $("#login_Modal .modal-dialog").addClass("redborder");
@@ -49,6 +34,7 @@ $(document).ready(function () {
         })
     })
 })
+/* Modal Buttons */
 $(document).ready(function () {
     $("#btn_login").click(function () {
         $("#login_Modal").fadeIn();
@@ -65,5 +51,24 @@ $(document).ready(function () {
             opacity: 100
         }, 200)
         $("#modalBg").fadeIn();
+    })
+})
+/* Modal Buttons Close */
+$(document).ready(function () {
+    $("#login_Modal .close").click(function () {
+        $("#login_Modal").animate({
+            top: "3%",
+            opacity: 0
+        }, 200)
+        $("#login_Modal").fadeOut();
+        $("#modalBg").fadeOut();
+    })
+    $("#register_Modal .close").click(function () {
+        $("#register_Modal").animate({
+            top: "0%",
+            opacity: 0
+        }, 200)
+        $("#register_Modal").fadeOut();
+        $("#modalBg").fadeOut();
     })
 })
