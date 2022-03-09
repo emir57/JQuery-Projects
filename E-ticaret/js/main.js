@@ -63,6 +63,14 @@ $(document).ready(function () {
         $("#register_Modal").fadeOut();
         $("#modalBg").fadeOut();
     })
+    $("#forgotPassword_Modal .close").click(function () {
+        $("#forgotPassword_Modal").animate({
+            top: "3%",
+            opacity: 0
+        }, 200)
+        $("#forgotPassword_Modal").fadeOut();
+        $("#modalBg").fadeOut();
+    })
 })
 /* Modal Bg Click */
 $(document).ready(function () {
