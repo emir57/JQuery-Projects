@@ -31,6 +31,19 @@ $(document).ready(function () {
         }, 200)
         $("#modalBg").fadeIn();
     })
+    $("#forgotPasswordBtn").click(function () {
+        $("#login_Modal").animate({
+            top: "3%",
+            opacity: 0
+        }, 200)
+        $("#login_Modal").fadeOut();
+        $("#forgotPassword_Modal").fadeIn();
+        $("#forgotPassword_Modal").animate({
+            top: "5%",
+            opacity: 100
+        }, 200)
+        $("#modalBg").fadeIn();
+    })
 })
 /* Modal Buttons Close */
 $(document).ready(function () {
