@@ -114,6 +114,7 @@ $(document).ready(function () {
         $("#login_Modal .modal-dialog").addClass("redborder");
         $("#register_Modal .modal-dialog").addClass("redborder");
         $("#forgotPassword_Modal .modal-dialog").addClass("redborder");
+        $("#cart_Modal .modal-dialog").addClass("redborder");
 
         $("#login_Modal").animate({
             left: "36%",
@@ -137,7 +138,8 @@ $(document).ready(function () {
             left: "35%",
         }, 100, function () {
             $("#forgotPassword_Modal .modal-dialog").removeClass("redborder");
-        })
+        }) 
+
         $("#cart_Modal").animate({
             left: "36%",
         }, 100).animate({
