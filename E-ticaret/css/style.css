@@ -11,6 +11,9 @@ body {
 html {
     font-size: 15px;
 }
+.row{
+    margin-right: 0 !important;
+}
 
 /* Address */
 address a {
