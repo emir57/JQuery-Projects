@@ -151,6 +151,36 @@
     <div id="modalBg"></div>
     <!-- Modal Background End-->
 
+    <!-- Cart  -->
+    <div class="" id="cart_Modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close me-0"
+                        style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>Sepetim</h3>
+                        <form>
+                            <div class="form-group mb-1">
+                                <label for="email" class="form-label">Eposta</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Lütfen eposta adresinizi giriniz" required>
+                            </div>
+                            <button class="btn btn-info">Gönder</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary close">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart End -->
+
     <!-- Nav -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -198,7 +228,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" id="btn_cart" style="cursor: pointer;" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Sepetim <span
                                     class="badge bg-primary">4</span>
@@ -219,10 +249,10 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                        <i class="fa fa-user" aria-hidden="true"></i>
                                         Profilim</a></li>
                                 <li><a class="dropdown-item" href="#">
-                                    <i class="fa fa-file-o" aria-hidden="true"></i>
+                                        <i class="fa fa-file-o" aria-hidden="true"></i>
                                         Kuponlarım</a></li>
                                 <li><a class="dropdown-item" href="#">
                                         <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Mesajlarım <span
@@ -232,8 +262,8 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item text-danger" href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Çıkış
-                                </a></li>
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Çıkış
+                                    </a></li>
                             </ul>
                         </li>
                     </ul>
