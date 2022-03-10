@@ -29,157 +29,163 @@
 </head>
 
 <body>
-    <!-- Login Modal -->
-    <div class="" id="login_Modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close me-0"
-                        style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
-                    <h5 class="modal-title"></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <h3>Giriş Yap</h3>
-                        <form>
-                            <div class="form-group mb-2">
-                                <label for="email" class="form-label">Eposta</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Lütfen eposta adresinizi giriniz" required>
-                            </div>
-                            <div class="form-group mb-2">
-                                <label for="password" class="form-label">Şifre</label>
-                                <input type="password" class="form-control" id="password" name="password"
-                                    placeholder="Lütfen şifrenizi giriniz" required>
-                            </div>
-                            <div class="form-group checkbox mb-2">
-                                <label for="">
-                                    <input type="checkbox" /> Beni Hatırla
-                                </label>
-                                <a class="text-decoration-none d-block" id="forgotPasswordBtn"
-                                    style="cursor: pointer;"><i class="fa fa-key" aria-hidden="true"></i> Şifremi
-                                    unuttum</a>
-                            </div>
-                            <button class="btn btn-info">Giriş Yap</button>
-                        </form>
+    <!-- Modals Start -->
+    <div>
+
+
+        <!-- Login Modal -->
+        <div class="" id="login_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary close">Kapat</button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Giriş Yap</h3>
+                            <form>
+                                <div class="form-group mb-2">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="password" class="form-label">Şifre</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Lütfen şifrenizi giriniz" required>
+                                </div>
+                                <div class="form-group checkbox mb-2">
+                                    <label for="">
+                                        <input type="checkbox" /> Beni Hatırla
+                                    </label>
+                                    <a class="text-decoration-none d-block" id="forgotPasswordBtn"
+                                        style="cursor: pointer;"><i class="fa fa-key" aria-hidden="true"></i> Şifremi
+                                        unuttum</a>
+                                </div>
+                                <button class="btn btn-info">Giriş Yap</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Login Modal End -->
+        <!-- Login Modal End -->
 
-    <!-- Forgot Password -->
-    <div class="" id="forgotPassword_Modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close me-0"
-                        style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
-                    <h5 class="modal-title"></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <h3>Şifremi Unuttum</h3>
-                        <form>
-                            <div class="form-group mb-1">
-                                <label for="email" class="form-label">Eposta</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Lütfen eposta adresinizi giriniz" required>
-                            </div>
-                            <button class="btn btn-info">Gönder</button>
-                        </form>
+        <!-- Forgot Password -->
+        <div class="" id="forgotPassword_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary close">Kapat</button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Şifremi Unuttum</h3>
+                            <form>
+                                <div class="form-group mb-1">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <button class="btn btn-info">Gönder</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Forgot Password End -->
+        <!-- Forgot Password End -->
 
-    <!-- Register Modal -->
-    <div class="" id="register_Modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close me-0"
-                        style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
-                    <h5 class="modal-title"></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <h3>Kayıt Ol</h3>
-                        <form>
-                            <div class="form-group mb-1">
-                                <label for="firstname" class="form-label">Ad</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname"
-                                    placeholder="Lütfen adınızı giriniz" required>
-                            </div>
-                            <div class="form-group mb-1">
-                                <label for="lastname" class="form-label">Soyad</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname"
-                                    placeholder="Lütfen soyadınızı giriniz" required>
-                            </div>
-                            <div class="form-group mb-1">
-                                <label for="email" class="form-label">Eposta</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Lütfen eposta adresinizi giriniz" required>
-                            </div>
-                            <div class="form-group mb-1">
-                                <label for="password" class="form-label">Şifre</label>
-                                <input type="password" class="form-control" id="password" name="password"
-                                    placeholder="Lütfen şifrenizi giriniz" required>
-                            </div>
-                            <button class="btn btn-info">Kayıt Ol</button>
-                        </form>
+        <!-- Register Modal -->
+        <div class="" id="register_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary close">Kapat</button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Kayıt Ol</h3>
+                            <form>
+                                <div class="form-group mb-1">
+                                    <label for="firstname" class="form-label">Ad</label>
+                                    <input type="text" class="form-control" id="firstname" name="firstname"
+                                        placeholder="Lütfen adınızı giriniz" required>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="lastname" class="form-label">Soyad</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname"
+                                        placeholder="Lütfen soyadınızı giriniz" required>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="password" class="form-label">Şifre</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Lütfen şifrenizi giriniz" required>
+                                </div>
+                                <button class="btn btn-info">Kayıt Ol</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Register Modal End -->
+        <!-- Register Modal End -->
 
-    <!-- Modal Background -->
-    <div id="modalBg"></div>
-    <!-- Modal Background End-->
+        <!-- Modal Background -->
+        <div id="modalBg"></div>
+        <!-- Modal Background End-->
 
-    <!-- Cart  -->
-    <div class="" id="cart_Modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close me-0"
-                        style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
-                    <h5 class="modal-title"></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <h3>Sepetim</h3>
-                        <form>
-                            <div class="form-group mb-1">
-                                <label for="email" class="form-label">Eposta</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Lütfen eposta adresinizi giriniz" required>
-                            </div>
-                            <button class="btn btn-info">Gönder</button>
-                        </form>
+        <!-- Cart Modal -->
+        <div class="" id="cart_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary close">Kapat</button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Sepetim</h3>
+                            <form>
+                                <div class="form-group mb-1">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <button class="btn btn-info">Gönder</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Cart Modal End -->
     </div>
-    <!-- Cart End -->
+    <!-- Modals End -->
 
     <!-- Nav -->
     <header>
@@ -222,14 +228,14 @@
                                 <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Üye
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" id="btn_login" >Giriş</a></li>
-                                <li><a class="dropdown-item" id="btn_register" >Kayıt Ol</a>
+                                <li><a class="dropdown-item" id="btn_login">Giriş</a></li>
+                                <li><a class="dropdown-item" id="btn_register">Kayıt Ol</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="btn_cart"role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="btn_cart" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Sepetim <span
                                     class="badge bg-primary">4</span>
                             </a>
