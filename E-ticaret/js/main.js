@@ -7,8 +7,11 @@ $(document).ready(function(){
 $(document).ready(function () {
     var btn_login = $("#btn_login")
     var btn_register = $("#btn_register")
-    var forgotPasswordBtn = $("#forgotPasswordBtn")
+    var btn_forgotpassword = $("#btn_forgotpassword")
     var login_Modal = $("#login_Modal")
+    var login_Modal = $("#login_Modal")
+
+
     var register_Modal = $("#register_Modal")
     var forgotPassword_Modal = $("#forgotPassword_Modal")
     var modalBg = $("#modalBg")
@@ -31,13 +34,7 @@ $(document).ready(function () {
         $("#login_Modal").fadeOut();
         $("#modalBg").fadeOut();
     })
-    $("#login_Modal").animate({
-        left: "36%",
-    }, 100).animate({
-        left: "35%",
-    }, 100, function () {
-        $("#login_Modal .modal-dialog").removeClass("redborder");
-    })
+
 })
 /*Register Modal*/
 $(document).ready(function () {
@@ -60,18 +57,12 @@ $(document).ready(function () {
         $("#modalBg").fadeOut();
     })
 
-    $("#register_Modal").animate({
-        left: "36%",
-    }, 100).animate({
-        left: "35%",
-    }, 100, function () {
-        $("#register_Modal .modal-dialog").removeClass("redborder");
-    })
+
 })
 /*Forgot password Modal*/
 $(document).ready(function () {
 
-    $("#forgotPasswordBtn").click(function () {
+    $("#btn_forgotpassword").click(function () {
         $("#login_Modal").animate({
             top: "3%",
             opacity: 0
@@ -94,13 +85,7 @@ $(document).ready(function () {
         $("#modalBg").fadeOut();
     })
 
-    $("#forgotPassword_Modal").animate({
-        left: "36%",
-    }, 100).animate({
-        left: "35%",
-    }, 100, function () {
-        $("#forgotPassword_Modal .modal-dialog").removeClass("redborder");
-    })
+
 })
 /*Cart Modal*/
 $(document).ready(function () {
@@ -113,6 +98,29 @@ $(document).ready(function () {
         $("#login_Modal .modal-dialog").addClass("redborder");
         $("#register_Modal .modal-dialog").addClass("redborder");
         $("#forgotPassword_Modal .modal-dialog").addClass("redborder");
-        
+
+        $("#login_Modal").animate({
+            left: "36%",
+        }, 100).animate({
+            left: "35%",
+        }, 100, function () {
+            $("#login_Modal .modal-dialog").removeClass("redborder");
+        })
+
+        $("#register_Modal").animate({
+            left: "36%",
+        }, 100).animate({
+            left: "35%",
+        }, 100, function () {
+            $("#register_Modal .modal-dialog").removeClass("redborder");
+        })
+
+        $("#forgotPassword_Modal").animate({
+            left: "36%",
+        }, 100).animate({
+            left: "35%",
+        }, 100, function () {
+            $("#forgotPassword_Modal .modal-dialog").removeClass("redborder");
+        })
     })
 })
