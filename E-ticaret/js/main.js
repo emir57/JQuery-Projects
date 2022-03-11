@@ -157,9 +157,14 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 600) {
             $("#backTopButton").fadeIn();
         }
-        if ($(this).scrollTop() <= 600) {
+        else{
             $("#backTopButton").fadeOut();
         }
+    })
+    $("#backTopButton").click(function(){
+        $("body,html").animate({
+            scrollTop:0
+        },1000)
     })
 
 })
