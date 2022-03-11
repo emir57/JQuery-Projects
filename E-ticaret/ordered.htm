@@ -197,7 +197,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-danger close">Kapat</button>
+                        <button class="btn btn-secondary close">Vazgeç</button>
                     </div>
                 </div>
             </div>
@@ -469,7 +469,18 @@
             var btn_cancel1 = $("#btn_cancel1");
             var order1 = $("#order1");
             btn_cancel1.click(function () {
-
+                $("#cancel_Modal .container").html(`
+                    <h3>${$("#order1 .order_name").text()}</h3>
+                    <br>
+                    <p class="text-primary">${$("#order1 .status").text()}</p>
+                    <p>${$("#order1 .community_name").text()}</p>
+                    <p>${$("#order1 .date").text()}</p>
+                    <p>${$("#order1 .price").text()}</p>
+                    <p>İptal Etmek istediğinizden emin misiniz?</p>
+                    <p style="float:right">
+                        <button class="btn btn-danger">İptal Et</button>
+                    </p>
+                `)
                 $("#cancel_Modal").fadeIn();
                 $("#cancel_Modal").animate({
                     opacity: 1,
