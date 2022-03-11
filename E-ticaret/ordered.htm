@@ -469,7 +469,13 @@
             var btn_cancel1 = $("#btn_cancel1");
             var order1 = $("#order1");
             btn_cancel1.click(function(){
-
+                
+                $("#cancel_Modal").fadeIn();
+                $("#cancel_Modal").animate({
+                    opacity:1,
+                    top:"5%"
+                },100)
+                $("#modalBg").show();
             })
         })
     </script>
