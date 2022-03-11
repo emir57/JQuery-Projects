@@ -317,7 +317,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item "><a href="index.htm">Ana Sayfa</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Adreslerim</li>
+                    <li class="breadcrumb-item active" aria-current="page">Mesajlarım</li>
                 </ol>
             </nav>
         </div>
@@ -329,19 +329,15 @@
                             <caption></caption>
                             <thead>
                                 <tr>
-                                    <th>Adres Başlığı</th>
-                                    <th>Açık Ev Adresi</th>
-                                    <th>Telefon</th>
-                                    <th>Tarih</th>
+                                    <th>Mesaj Başlığı</th>
+                                    <th>Mesaj İçeriği</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr id="address1">
-                                    <td class="address_title">Ankara</td>
-                                    <td class="address_text">Çankaya</td>
-                                    <td class="phone">+90 555 555 55 55</td>
-                                    <td class="date">11.03.2022</td>
+                                <tr id="message1">
+                                    <td class="message_title">%5 İndirim Tutarı</td>
+                                    <td class="message_text">200TL üzeri alışverişler için anında %5 indirim.</td>
                                     <td>
                                         <a id="btn_cancel1" style="cursor: pointer;" class="text-danger table-delete-btn text-decoration-none">Sil</a>
                                     </td>
@@ -468,11 +464,9 @@
             var address1 = $("#address1");
             btn_cancel1.click(function () {
                 $("#delete_Modal .container").html(`
-                    <h3>${$("#address1 .address_title").text()}</h3>
+                    <h3>${$("#message1 .message_title").text()}</h3>
                     <br>
-                    <p class="text-primary">${$("#address1 .address_text").text()}</p>
-                    <p>${$("#address1 .phone").text()}</p>
-                    <p>${$("#address1 .date").text()}</p>
+                    <p class="text-primary">${$("#message1 .message_text").text()}</p>
                     <p>Silmek istediğinizden emin misiniz?</p>
                     <p style="float:right">
                         <button class="btn btn-danger">Sil</button>
