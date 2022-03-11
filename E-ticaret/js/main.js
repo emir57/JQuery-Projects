@@ -171,15 +171,24 @@ $(document).ready(function () {
 
 /* Register Modal Validation */
 $(document).ready(function(){
-    let firstname = $("#firstname").val();
-    let lastname = $("#lastname").val();
-    let email = $("#email").val();
-    let password = $("#password").val();
-    $("#register_Modal form").submit(function(){
-        let isSuccess = true;
+    let firstname = $("#register_Modal form #firstname");
+    let lastname = $("#register_Modal form #lastname");
+    let email = $("#register_Modal form #email");
+    let password = $("#register_Modal form #password");
 
+    let firstnameError = $("#register_Modal form #firstnameError");
+    let lastnameError = $("#register_Modal form #lastnameError");
+    let emailError = $("#register_Modal form #emailError");
+    let passwordError = $("#register_Modal form #passwordError");
+    $("#register_Modal form").submit(function(){
+        let isSuccess = false;
+        console.log(email.val())
 
         return isSuccess;
     })
+
+    function ValidateEmail(email){
+
+    }
 })
 

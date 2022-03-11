@@ -122,22 +122,26 @@
                                 <div class="form-group mb-1">
                                     <label for="firstname" class="form-label">Ad</label>
                                     <input type="text" class="form-control" id="firstname" name="firstname"
-                                        placeholder="Lütfen adınızı giriniz" required>
+                                        placeholder="Lütfen adınızı giriniz">
+                                    <span class="text-danger" id="firstnameError"></span>
                                 </div>
                                 <div class="form-group mb-1">
                                     <label for="lastname" class="form-label">Soyad</label>
                                     <input type="text" class="form-control" id="lastname" name="lastname"
-                                        placeholder="Lütfen soyadınızı giriniz" required>
+                                        placeholder="Lütfen soyadınızı giriniz">
+                                    <span class="text-danger" id="lastnameError"></span>
                                 </div>
                                 <div class="form-group mb-1">
                                     <label for="email" class="form-label">Eposta</label>
-                                    <input type="email" class="form-control" id="email" name="email"
+                                    <input type="" class="form-control" id="email" name="email"
                                         placeholder="Lütfen eposta adresinizi giriniz" required>
+                                    <span class="text-danger" id="emailError"></span>
                                 </div>
                                 <div class="form-group mb-1">
                                     <label for="password" class="form-label">Şifre</label>
                                     <input type="password" class="form-control" id="password" name="password"
-                                        placeholder="Lütfen şifrenizi giriniz" required>
+                                        placeholder="Lütfen şifrenizi giriniz">
+                                        <span class="text-danger" id="passwordError"></span>
                                 </div>
                                 <button class="btn btn-info">Kayıt Ol</button>
                             </form>
