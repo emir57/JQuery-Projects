@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" content="">
+    <title>Kuponlarım</title>
+    <!-- Google Font => font-family: 'Montserrat', sans-serif;
+                        font-family: 'Roboto', sans-serif;     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- JqueryUI JS -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+        integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- Modals Start -->
+    <div>
+        <!-- Login Modal -->
+        <div class="" id="login_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Giriş Yap</h3>
+                            <form>
+                                <div class="form-group mb-2">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="password" class="form-label">Şifre</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Lütfen şifrenizi giriniz" required>
+                                </div>
+                                <div class="form-group checkbox mb-2">
+                                    <label for="">
+                                        <input type="checkbox" /> Beni Hatırla
+                                    </label>
+                                    <a class="text-decoration-none d-block" id="btn_forgotpassword"
+                                        style="cursor: pointer;"><i class="fa fa-key" aria-hidden="true"></i> Şifremi
+                                        unuttum</a>
+                                </div>
+                                <button class="btn btn-info">Giriş Yap</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Login Modal End -->
+
+        <!-- Forgot Password -->
+        <div class="" id="forgotPassword_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Şifremi Unuttum</h3>
+                            <form>
+                                <div class="form-group mb-1">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <button class="btn btn-info">Gönder</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Forgot Password End -->
+
+        <!-- Register Modal -->
+        <div class="" id="register_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Kayıt Ol</h3>
+                            <form>
+                                <div class="form-group mb-1">
+                                    <label for="firstname" class="form-label">Ad</label>
+                                    <input type="text" class="form-control" id="firstname" name="firstname"
+                                        placeholder="Lütfen adınızı giriniz" required>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="lastname" class="form-label">Soyad</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname"
+                                        placeholder="Lütfen soyadınızı giriniz" required>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="email" class="form-label">Eposta</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Lütfen eposta adresinizi giriniz" required>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="password" class="form-label">Şifre</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Lütfen şifrenizi giriniz" required>
+                                </div>
+                                <button class="btn btn-info">Kayıt Ol</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary close">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Register Modal End -->
+
+        <!-- Modal Background -->
+        <div id="modalBg"></div>
+        <!-- Modal Background End-->
+
+        <!-- Cart Modal -->
+        <div class="" id="cart_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h3>Sepetim</h3>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4"><img src="https://via.placeholder.com/60x60"
+                                            class="rounded-circle img-fluid" alt="resim yok"></div>
+                                    <div class="col-md-8">Lorem ipsum dolor sit.</div>
+                                </div>
+                            </div>
+                            <a href="cart.html" class="btn btn-primary float-end"> Ödeme</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger close">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Modal End -->
+
+        <!-- Cancel Modal -->
+        <div class="" id="delete_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close me-0"
+                            style="text-decoration: none;color: black;font-size: 2rem;cursor: pointer;">&times;</a>
+                        <h5 class="modal-title"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary close">Vazgeç</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cancel Modal End -->
+    </div>
+    <!-- Modals End -->
+
+    <!-- Nav -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.htm">E-Ticaret</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.htm">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Diller
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                                <li><a class="dropdown-item" href="#">GE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mx-auto">
+                        <input class="form-control me-2" style="max-width: 150px !important;" type="search"
+                            placeholder="Ara" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Ara</button>
+                    </form>
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Üye
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" id="btn_login">Giriş</a></li>
+                                <li><a class="dropdown-item" id="btn_register">Kayıt Ol</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Sepetim <span
+                                    class="badge bg-primary">4</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" id="btn_cart">
+                                        Tüm Ürünler <span class="badge bg-primary">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 80px !important;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Bilgiler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        Profilim</a></li>
+                                <li><a class="dropdown-item active" href="#">
+                                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                                        Kuponlarım</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Mesajlarım <span
+                                            class="badge bg-danger">2</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="ordered.htm">
+                                        <i class="fa fa-truck" aria-hidden="true"></i>&nbsp;Siparişlerim <span
+                                            class="badge bg-info">2</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="address.htm">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Adreslerim <span
+                                            class="badge bg-warning">1</span>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Çıkış
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Nav End -->
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="index.htm">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Adreslerim</li>
+                </ol>
+            </nav>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-sm table-striped table-dark table-hover text-center">
+                            <caption></caption>
+                            <thead>
+                                <tr>
+                                    <th>Adres Başlığı</th>
+                                    <th>Açık Ev Adresi</th>
+                                    <th>Telefon</th>
+                                    <th>Tarih</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="address1">
+                                    <td class="address_title">Ankara</td>
+                                    <td class="address_text">Çankaya</td>
+                                    <td class="phone">+90 555 555 55 55</td>
+                                    <td class="date">11.03.2022</td>
+                                    <td>
+                                        <a id="btn_cancel1" style="cursor: pointer;" class="text-danger table-delete-btn text-decoration-none">Sil</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-muted mt-4">
+                        <h5 class="ml-3">Address</h5>
+                        <address>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ankara/Turkey</span>
+                            <br>
+                            <a href="mailto:emir.gurbuz06@hotmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> emir.gurbuz06@hotmail.com
+                            </a>
+                            <br>
+                            <a href="tel:+905555555555">
+                                <i class="fa fa-phone" aria-hidden="true"></i> +90 555 555 55 55
+                            </a>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Turkey%20Ankara&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://putlocker-is.org"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">full width google map</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <div class="form group col-12">
+                            <label class="form-label" for="name_surname">Ad ve Soyad</label>
+                            <input class="form-control" type="text" id="name_surname" name="name_surname"
+                                placeholder="Adınız ve Soyadınız">
+                            <small style="display: none;" class="text-danger">adınızı girmediniz</small>
+                        </div>
+                        <div class="form group col-12">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" name="email" placeholder="Eposta Adresiniz" id="email"
+                                type="email">
+                            <small style="display: none;" class="text-danger">epostanızı girmediniz</small>
+                        </div>
+                        <div class="form group col-12 mb-1">
+                            <label class="form-label" for="description">Açıklama</label>
+                            <textarea class="form-control" name="description" id="description" cols="20"
+                                rows="1"></textarea>
+                            <small style="display: none;" class="text-danger">açıklama girmediniz</small>
+                        </div>
+                        <input type="submit" class="btn btn-sm btn-primary"></input>
+                        <input type="reset" class="btn btn-sm btn-outline-danger"></input>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="card bg-dark text-white">
+            <div align="center" class="card-body">
+                <h5 class="card-title">footer</h5>
+                <a href="#" class="btn icon icon-instagram">
+                    <span class="">
+                        <i class="fa fa-instagram"></i> Instagram
+                    </span>
+                </a>
+                <a href="#" class="btn icon icon-twitter">
+                    <span class="">
+                        <i class="fa fa-twitter"></i> Twitter
+                    </span>
+                </a>
+                <a href="https://github.com/emir57" target="_blank" class="btn icon icon-github">
+                    <span class="">
+                        <i class="fa fa-github"></i> GitHub
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/emir-gurbuz/" target="_blank" class="btn icon icon-linkedin">
+                    <span class="">
+                        <i class="fa fa-linkedin"></i> Linkedin
+                    </span>
+                </a>
+                <br>
+                <span id="design-by">Design By Emir Gürbüz &copy;</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script> -->
+    <script>
+        $(document).ready(function () {
+            var btn_cancel1 = $("#btn_cancel1");
+            var address1 = $("#address1");
+            btn_cancel1.click(function () {
+                $("#delete_Modal .container").html(`
+                    <h3>${$("#address1 .address_title").text()}</h3>
+                    <br>
+                    <p class="text-primary">${$("#address1 .address_text").text()}</p>
+                    <p>${$("#address1 .phone").text()}</p>
+                    <p>${$("#address1 .date").text()}</p>
+                    <p>Silmek istediğinizden emin misiniz?</p>
+                    <p style="float:right">
+                        <button class="btn btn-danger">Sil</button>
+                    </p>
+                `)
+                $("#delete_Modal").fadeIn();
+                $("#delete_Modal").animate({
+                    opacity: 1,
+                    top: "5%"
+                }, 100)
+                $("#modalBg").show();
+            })
+        })
+        $("#delete_Modal .close").click(function () {
+            $("#delete_Modal").animate({
+                top: "3%",
+                opacity: 0
+            }, 200)
+            $("#delete_Modal").fadeOut();
+            $("#modalBg").fadeOut();
+        })
+    </script>
+
+</body>
+
+</html>
