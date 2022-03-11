@@ -465,34 +465,33 @@
     <script>
         $(document).ready(function () {
             var btn_cancel1 = $("#btn_cancel1");
-            var order1 = $("#order1");
+            var address1 = $("#address1");
             btn_cancel1.click(function () {
-                $("#cancel_Modal .container").html(`
-                    <h3>${$("#order1 .order_name").text()}</h3>
+                $("#delete_Modal .container").html(`
+                    <h3>${$("#address1 .address_title").text()}</h3>
                     <br>
-                    <p class="text-primary">${$("#order1 .status").text()}</p>
-                    <p>${$("#order1 .community_name").text()}</p>
-                    <p>${$("#order1 .date").text()}</p>
-                    <p>${$("#order1 .price").text()}</p>
-                    <p>İptal Etmek istediğinizden emin misiniz?</p>
+                    <p class="text-primary">${$("#address1 .address_text").text()}</p>
+                    <p>${$("#address1 .phone").text()}</p>
+                    <p>${$("#address1 .date").text()}</p>
+                    <p>Silmek istediğinizden emin misiniz?</p>
                     <p style="float:right">
-                        <button class="btn btn-danger">İptal Et</button>
+                        <button class="btn btn-danger">Sil</button>
                     </p>
                 `)
-                $("#cancel_Modal").fadeIn();
-                $("#cancel_Modal").animate({
+                $("#delete_Modal").fadeIn();
+                $("#delete_Modal").animate({
                     opacity: 1,
                     top: "5%"
                 }, 100)
                 $("#modalBg").show();
             })
         })
-        $("#cancel_Modal .close").click(function () {
-            $("#cancel_Modal").animate({
+        $("#delete_Modal .close").click(function () {
+            $("#delete_Modal").animate({
                 top: "3%",
                 opacity: 0
             }, 200)
-            $("#cancel_Modal").fadeOut();
+            $("#delete_Modal").fadeOut();
             $("#modalBg").fadeOut();
         })
     </script>
