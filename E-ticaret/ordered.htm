@@ -318,11 +318,11 @@
                             </thead>
                             <tbody>
                                 <tr id="order1">
-                                    <td>xyz</td>
-                                    <td class="text-warning">Hazırlanıyor...</td>
-                                    <td>MKP Ticaret</td>
-                                    <td>11.03.2022</td>
-                                    <td>976 TL</td>
+                                    <td class="order_name">xyz</td>
+                                    <td class="text-warning status">Hazırlanıyor...</td>
+                                    <td class="community_name">MKP Ticaret</td>
+                                    <td class="date">11.03.2022</td>
+                                    <td class="price">976 TL</td>
                                     <td>
                                         <a id="btn_cancel1" class="text-danger text-decoration-none">İptal Et</a>
                                     </td>
@@ -445,7 +445,8 @@
     </script> -->
     <script>
         $(document).ready(function(){
-
+            var btn_cancel1 = $("#btn_cancel1");
+            var order1 = $("#order1");
         })
     </script>
 
