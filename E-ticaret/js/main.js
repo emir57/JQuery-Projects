@@ -138,7 +138,7 @@ $(document).ready(function () {
             left: "35%",
         }, 100, function () {
             $("#forgotPassword_Modal .modal-dialog").removeClass("redborder");
-        }) 
+        })
 
         $("#cart_Modal").animate({
             left: "36%",
@@ -151,6 +151,9 @@ $(document).ready(function () {
 })
 
 /*Scroll To Top*/
-$(document).ready(function(){
+$(document).ready(function () {
+    $(window).scroll(function () {
+        console.log($(this).scrollTop())
+    })
 
 })
