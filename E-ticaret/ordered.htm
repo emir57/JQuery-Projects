@@ -182,7 +182,7 @@
             </div>
         </div>
         <!-- Cart Modal End -->
-        
+
         <!-- Cancel Modal -->
         <div class="" id="cancel_Modal">
             <div class="modal-dialog">
@@ -465,18 +465,26 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script> -->
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             var btn_cancel1 = $("#btn_cancel1");
             var order1 = $("#order1");
-            btn_cancel1.click(function(){
-                
+            btn_cancel1.click(function () {
+
                 $("#cancel_Modal").fadeIn();
                 $("#cancel_Modal").animate({
-                    opacity:1,
-                    top:"5%"
-                },100)
+                    opacity: 1,
+                    top: "5%"
+                }, 100)
                 $("#modalBg").show();
             })
+        })
+        $("#cancel_Modal .close").click(function () {
+            $("#cancel_Modal").animate({
+                top: "3%",
+                opacity: 0
+            }, 200)
+            $("#cancel_Modal").fadeOut();
+            $("#modalBg").fadeOut();
         })
     </script>
 
