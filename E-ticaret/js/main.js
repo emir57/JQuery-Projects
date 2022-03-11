@@ -181,6 +181,10 @@ $(document).ready(function () {
     let emailError = $("#register_Modal form #emailError");
     let passwordError = $("#register_Modal form #passwordError");
     $("#register_Modal form").submit(function () {
+        firstnameError.html("");
+        lastnameError.html("");
+        emailError.html("");
+        passwordError.html("");
         let isSuccess = true;
         if (firstname.val().trim().length == 0) {
             isSuccess = false;
@@ -195,6 +199,7 @@ $(document).ready(function () {
             emailError.html("Email boş olamaz");
         }
         if (password.val().trim().length == 0) {
+            console.log(password.val());
             isSuccess = false;
             passwordError.html("Şifre boş olamaz");
         }
@@ -207,7 +212,10 @@ $(document).ready(function () {
 
     function ValidateEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        return regex.test();
+        return regex.test(email);
+    }
+    function ValidatePassword(password) {
+
     }
 })
 
