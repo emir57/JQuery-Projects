@@ -181,17 +181,17 @@ $(document).ready(function(){
     let emailError = $("#register_Modal form #emailError");
     let passwordError = $("#register_Modal form #passwordError");
     $("#register_Modal form").submit(function(){
-        let isSuccess = false;
-        console.log(email.val())
-
+        let isSuccess = true;
+        if(!ValidateEmail(email.val())){
+            isSuccess = false;
+            emailError.html("Geçersiz Email");
+        }
         return isSuccess;
     })
 
     function ValidateEmail(email){
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if(regex.test()){
-            emailError.html("Geçersiz Email");
-        }
+        return regex.test();
     }
 })
 
