@@ -153,7 +153,10 @@ $(document).ready(function () {
 /*Scroll To Top*/
 $(document).ready(function () {
     $(window).scroll(function () {
-        console.log($(this).scrollTop())
+        // console.log($(this).scrollTop())
+        if ($(this).scrollTop() > 600) {
+            $("#backTopButton").fadeIn();
+        }
     })
 
 })
