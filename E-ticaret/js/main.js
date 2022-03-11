@@ -157,6 +157,9 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 600) {
             $("#backTopButton").fadeIn();
         }
+        if ($(this).scrollTop() <= 600) {
+            $("#backTopButton").fadeOut();
+        }
     })
 
 })
