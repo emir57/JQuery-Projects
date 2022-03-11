@@ -149,3 +149,8 @@ $(document).ready(function () {
         })
     })
 })
+
+/*Scroll To Top*/
+$(document).ready(function(){
+
+})
