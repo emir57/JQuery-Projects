@@ -157,20 +157,20 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 600) {
             $("#backTopButton").fadeIn();
         }
-        else{
+        else {
             $("#backTopButton").fadeOut();
         }
     })
-    $("#backTopButton").click(function(){
+    $("#backTopButton").click(function () {
         $("body,html").animate({
-            scrollTop:0
-        },1000)
+            scrollTop: 0
+        }, 1000)
     })
 
 })
 
 /* Register Modal Validation */
-$(document).ready(function(){
+$(document).ready(function () {
     let firstname = $("#register_Modal form #firstname");
     let lastname = $("#register_Modal form #lastname");
     let email = $("#register_Modal form #email");
@@ -180,32 +180,32 @@ $(document).ready(function(){
     let lastnameError = $("#register_Modal form #lastnameError");
     let emailError = $("#register_Modal form #emailError");
     let passwordError = $("#register_Modal form #passwordError");
-    $("#register_Modal form").submit(function(){
+    $("#register_Modal form").submit(function () {
         let isSuccess = true;
-        if(firstname.val().trim()){
+        if (firstname.val().trim().length == 0) {
             isSuccess = false;
             firstnameError.html("Ad boş olamaz");
         }
-        if(lastname.val().trim()){
+        if (lastname.val().trim().length == 0) {
             isSuccess = false;
-            lastname.html("Soyad boş olamaz");
+            lastnameError.html("Soyad boş olamaz");
         }
-        if(email.val().trim()){
+        if (email.val().trim().length == 0) {
             isSuccess = false;
             emailError.html("Email boş olamaz");
         }
-        if(password.val().trim()){
+        if (password.val().trim().length == 0) {
             isSuccess = false;
             passwordError.html("Şifre boş olamaz");
         }
-        if(!ValidateEmail(email.val())){
+        if (!ValidateEmail(email.val())) {
             isSuccess = false;
             emailError.html("Geçersiz Email");
         }
         return isSuccess;
     })
 
-    function ValidateEmail(email){
+    function ValidateEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test();
     }
