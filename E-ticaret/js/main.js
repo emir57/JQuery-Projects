@@ -219,3 +219,14 @@ $(document).ready(function () {
     }
 })
 
+/* Focus Blur */
+$(document).ready(function(){
+    $(":text").focusin(function(){
+        $(this).css("background","gold").css("color","white");
+    })
+    $(":text").blur(function(){
+        $(this).css("background","#fff").css("color","black");
+    })
+})
+
+
