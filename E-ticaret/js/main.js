@@ -168,3 +168,18 @@ $(document).ready(function () {
     })
 
 })
+
+/* Register Modal Validation */
+$(document).ready(function(){
+    let firstname = $("#firstname").val();
+    let lastname = $("#lastname").val();
+    let email = $("#email").val();
+    let password = $("#password").val();
+    $("#register_Modal form").submit(function(){
+        let isSuccess = true;
+
+
+        return isSuccess;
+    })
+})
+
