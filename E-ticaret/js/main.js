@@ -182,6 +182,22 @@ $(document).ready(function(){
     let passwordError = $("#register_Modal form #passwordError");
     $("#register_Modal form").submit(function(){
         let isSuccess = true;
+        if(firstname.val().trim()){
+            isSuccess = false;
+            firstnameError.html("Ad boş olamaz");
+        }
+        if(lastname.val().trim()){
+            isSuccess = false;
+            lastname.html("Soyad boş olamaz");
+        }
+        if(email.val().trim()){
+            isSuccess = false;
+            emailError.html("Email boş olamaz");
+        }
+        if(password.val().trim()){
+            isSuccess = false;
+            passwordError.html("Şifre boş olamaz");
+        }
         if(!ValidateEmail(email.val())){
             isSuccess = false;
             emailError.html("Geçersiz Email");
